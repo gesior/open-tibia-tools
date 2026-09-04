@@ -1,0 +1,28 @@
+{
+  "name": "open-tibia-tools",
+  "version": "0.2.1",
+  "description": "Browser tools for DAT, SPR and OTB files, built on open-tibia-library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "author": "Gesior.pl (Jerzy Skalski)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gesior/open-tibia-tools.git"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@gesior/open-tibia-library": "^0.2.1",
+    "gif.js": "^0.2.0",
+    "jszip": "^3.10.1"
+  }
+}
