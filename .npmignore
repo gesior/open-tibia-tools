@@ -1,0 +1,5 @@
+.idea
+*.map
+tools/colored-outfit-images-generator/cache.generated.txt
+tools/colored-outfit-images-generator/outfits_anim
+tools/colored-outfit-images-generator/data.json
