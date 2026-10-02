@@ -1,11 +1,16 @@
 {
   "name": "open-tibia-tools",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Browser tools for DAT, SPR and OTB files, built on open-tibia-library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
-    "watch": "webpack --config webpack.config.js --watch"
+    "build": "npm run build:web && npm run build:cli",
+    "build:web": "webpack --config webpack.config.js",
+    "build:cli": "webpack --config webpack.cli.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "generate:outfits": "tsx cli/outfitImageGenerator.ts",
+    "generate:item-images": "tsx cli/itemImageGenerator.ts",
+    "generate:item-image-frames": "tsx cli/itemImageFramesGenerator.ts"
   },
   "author": "Gesior.pl (Jerzy Skalski)",
   "license": "MIT",
@@ -14,8 +19,10 @@
     "url": "git://github.com/gesior/open-tibia-tools.git"
   },
   "devDependencies": {
+    "@types/node": "^26.6.4",
     "copy-webpack-plugin": "^14.0.0",
     "ts-loader": "^9.5.4",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.2",
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
@@ -23,6 +30,7 @@
   "dependencies": {
     "@gesior/open-tibia-library": "^0.2.1",
     "gif.js": "^0.2.0",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "pngjs": "^7.0.0"
   }
 }
