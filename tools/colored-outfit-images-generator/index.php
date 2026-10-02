@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Tibia Outfit Images Generator 0.2.1</title>
+    <title>Tibia Outfit Images Generator</title>
 </head>
 <body>
 	<span style="font-size:20px">
